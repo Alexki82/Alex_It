@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'open sans';
+    font-size: 16px;
+    background: #dfe6e9;
+}
+
+header {
+    width: 100%;
+    height: 550px;
+    background: #0984e3;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    border: 1px solid black;
+    background-image: url(imagen/fondo6.jpg);
+    color: gray;
+}
+
+.menu1{
+    color: white;
+    background: #0c2461; 
+}
+
+.texto1 {
+    text-align: center;
+    margin-top: 5%;
+    padding: 4%;
+    color: rgba(255, 255, 255, .7);
+    
+}
+ 
+body .logo1{
+    width: 60px;
+    border: 2px solid violet;
+    margin-right:10px;
+    
+}
+.hamburguesa {
+    height: 100%;
+    width: 70px;
+    text-align: center;
+    display: none;
+}
+
+.hamburguesa img {
+    vertical-align: top;
+    padding: 23px;
+
+}
+
+/*@media screen and (max-width:800px){
+    .hamburguesa{
+        display: block;
+    }
+
+    .enlaces{
+        position: fixed;
+        background: #303a52;
+        left: 0;
+        top: 70px;
+        width: 60%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(-100%);
+    }
+
+    .enlaces2{
+        transform: translateX(0%);
+    }
+
+
+}*/
+
+header .textos {
+    margin-top: 152px;
+}
+
+header .titulo {
+    font-size: 60px;
+}
+
+header .subtitulo {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+
+header .boton {
+    display: inline-block;
+    padding: 6px;
+    width: 128px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+}
+
+header .jumbotron {
+    
+    width: 450px;
+    text-align: center;
+    border: 1px solid black;
+    float: right;
+    padding: 50px;
+    margin-top: auto;   
+}
+
+.seccion1 {
+    float: left;
+    padding-left: 5%;
+}
+
+.seccion2 {
+    float: right;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+.sesgoabajo {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #dfe6e9 transparent;
+}
+
+.sesgoarriba {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 35vh 100vw 0 0;
+    border-style: solid;
+    border-color: #dfe6e9 transparent transparent transparent;
+
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 52px 0;
+
+}
+
+.sobre-nosotros {
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.slogan {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.parrafo {
+    margin-bottom: 13px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 24px;
+    color: rgb(24, 16, 16);
+}
+
+.acerca-de .boton {
+    display: inline-block;
+    padding: 6px;
+    width: 128px;
+    font-weight: 300;
+    border: 1px solid rgba(24, 16, 16, .7);
+    color: rgb(24, 16, 16);
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    margin-top: 24px;
+
+}
+
+.galeria {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+
+}
+
+.imagenes {
+    width: 20%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.encima {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 73, 94, 0.815);
+}
+
+.encima h2 {
+    position: relative;
+    top: 45%;
+    text-align: center;
+    color: #fff;
+}
+
+.encima div {
+    position: relative;
+    display: block;
+    top: 46%;
+    width: 40px;
+    height: 5px;
+    background: white;
+    margin: auto;
+}
+
+.cards {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.card {
+    margin: 20px 0;
+    width: 30%;
+    height: 250px;
+    text-align: center;
+    padding: 40px;
+    box-shadow: 0px 0px 4px rgba(52, 73, 94, 0.849);
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.cards img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 80%;
+}
+
+.fondo {
+    height: 900px;
+    position: relative;
+    background-image: url(imagen/5.jpeg);
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 130px;
+
+}
+
+.sesgoabajo-unico {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #2c3e50 transparent;
+
+}
+
+.titulo-patrocinadores,
+.subtitulo-patrocinadores {
+    color: #fff;
+    text-align: center;
+}
+
+.titulo-patrocinadores {
+    font-size: 56px;
+    margin-top: 48px;
+}
+
+.subtitulo-patrocinadores {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 64px;
+}
+
+.clientes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cliente {
+    width: 30%;
+}
+
+.cliente img {
+    width: 100%;
+}
+
+footer {
+    background-image: url(imagen/fondo6.jpg);
+    height: auto;
+}
+
+.titulo-footer,
+.subtitulo-footer {
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 56px;
+
+}
+
+.subtitulo-footer {
+    font-size: 25px;
+    margin-bottom: 64px;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="telefono"] {
+    display: inline-block;
+    width: 30%;
+    padding: 13px;
+    border: none;
+    color: #fff;
+    font-family: 'open sans';
+    background: rgba(167, 150, 161, 0.5);
+    margin-bottom: 16px;
+    border-top: 1px solid rgba(37, 37, 33, .7);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="telefono"]:focus {
+    border-top: 5px solid rgba(255, 255, 255, .7);
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 200%;
+    background: rgba(167, 150, 161, 0.5);
+    padding: 13px;
+    border: none;
+    color: #fff;
+    font-family: 'open sans';
+    margin-bottom: 16px;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    padding: 13px;
+    border: none;
+    color: #fff;
+    background: rgba(37, 37, 33, .7);
+    width: 96px;
+    margin-left: 45%;
+
+}
+
+@media screen and (max-width:610px) {
+    header .textos {
+        margin-top: 130px;
+    }
+
+    header .titulo {
+        font-size: 75px;
+    }
+
+    .none {
+        display: none
+    }
+
+    .imagenes {
+        flex-grow: 1;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .fondo {
+        height: auto;
+    }
+
+    .especial {
+        display: none;
+    }
+
+    .cliente {
+        width: 90%;
+        height: 200px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .hamburguesa {
+        display: block;
+    }
+
+    .enlaces {
+        position: fixed;
+        background: #303a52;
+        left: 0;
+        top: 70px;
+        width: 60%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(-100%);
+    }
+
+    .enlaces2 {
+        transform: translateX(0%);
+    }
+
+    header .textos {
+        margin-top: 100px;
+    }
+
+    header .titulo {
+        font-size: 65px;
+    }
+
+    header .subtitulo {
+        font-size: 25px;
+        margin-bottom: 32px;
+    }
+
+    .sobre-nosotros {
+        font-size: 46px;
+    }
+
+    .slogan {
+        font-size: 20px;
+    }
+
+    .titulo-patrocinadores {
+        font-size: 46px;
+    }
+
+    .subtitulo-patrocinadores {
+        font-size: 20px;
+    }
+
+}
+    .prueba {
+        font-size: 20x;
+        background: white;
+        text-align: center;
+        font-family: sans-serif;
+        padding: 5px;
+    }
+
+    .fijar{
+        margin-top: -135px;
+    }
+
+    
+
+
